@@ -6,42 +6,50 @@ $(window).scroll(function () {
     var header = document.querySelector("#header");
 
     if (newScrolltop > lastScrollTop) {
-        if($(".submenu-background-blur").hasClass('active-blur')){
+        if ($(".submenu-background-blur").hasClass('active-blur')) {
             header.classList.add("sticky");
-        }else{
+        } else {
 
             header.classList.add("remove_header");
             header.classList.remove("sticky");
         }
-        
 
-    }else if (newScrolltop < lastScrollTop) {
+
+    } else if (newScrolltop < lastScrollTop) {
 
         header.classList.add("sticky");
         header.classList.remove("remove_header");
-        if( position == scrollTopPosition){
+        if (position == scrollTopPosition) {
             header.classList.remove("sticky");
         }
-       
+
     }
     lastScrollTop = newScrolltop <= 0 ? 0 : newScrolltop;
 
 });
+window.onload = function () {
+    var faviconIndex = 0;
+    var favicon = document.getElementById('favIcon')
+    setInterval(function () {
+        favicon.href = 'assets/img/fav' + faviconIndex + ".png";
+        faviconIndex++;
+        faviconIndex %= 2;
+    }, 1000);
+};
 
-
-$('.service-sub-menu').on("mouseover",function(){
+$('.service-sub-menu').on("mouseover", function () {
     $(".submenu-background-blur").addClass('active-blur');
     $(".service-submenu").addClass('open-submenu');
 });
-$('.service-sub-menu').on("mouseout",function(){
+$('.service-sub-menu').on("mouseout", function () {
     $(".submenu-background-blur").removeClass('active-blur');
     $(".service-submenu").removeClass('open-submenu');
 });
 
-$('.service-submenu').on("mouseover",function(){
+$('.service-submenu').on("mouseover", function () {
     $(".submenu-background-blur").addClass('active-blur');
 });
-$('.service-submenu').on("mouseout",function(){
+$('.service-submenu').on("mouseout", function () {
     $(".submenu-background-blur").removeClass('active-blur');
 });
 
@@ -54,7 +62,7 @@ $('.service-submenu').on("mouseout",function(){
 //     $("#ui-ux-image").addClass('active-image');
 // });
 
-$('.portfolio-categories span').click(function(event){
+$('.portfolio-categories span').click(function (event) {
     $('.portfolio-categories span').removeClass('active-category');
     $(event.target).addClass('active-category');
 });
