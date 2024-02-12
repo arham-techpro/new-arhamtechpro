@@ -369,8 +369,12 @@ html.lenis {
 /* ====================================
 Header Section
 ====================================== */
-.header-button-services , .navbar-brand{
-    width: 25%;
+.navbar-brand{
+    width: 23%;
+    margin-right: 0 ;
+}
+.header-button-services {
+    width: 27%;
     margin-right: 0 ;
 }
 .navbar-width{
@@ -391,7 +395,7 @@ Header Section
     box-shadow: 1px -7px 3px 5px #00000070;
 }
 .logo{
-    width: 225px;
+    width: 220px;
 }
 .main-navbar.navbar-expand-lg .navbar-nav .nav-link{
     color: var(--base-white);
@@ -439,7 +443,7 @@ Header Section
     overflow: hidden;
 }
 .service-on-menu{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding-top: 38px;
 }
 .service-on-menu.main-navbar.index-2.navbar-expand-lg .navbar-nav .nav-link{
@@ -452,10 +456,10 @@ Header Section
     background: var(--color-a);
 }
 .service-submenu:hover{
-    height: 90vh;
+    height: 85vh;
 }
 .service-submenu.open-submenu{
-    height: 90vh;
+    height: 85vh;
 }
 
 .service-submenu-container{
@@ -480,7 +484,7 @@ Header Section
     color: #989898;
 }
 .submenu-socails{
-    padding: 77px 18px 25px;
+    padding: 102px 18px 25px;
 }
 .footer-social-icon.header-social {
     border-color: #4B4B4B;
@@ -505,7 +509,9 @@ Header Section
     z-index: 2;
 }
 
-
+.service-sub-menu{
+    padding-right: 20px;
+}
 
 .service-sub-menu span{
     font-weight: 500;
@@ -666,13 +672,13 @@ Video Section
 .showreel-section {
     position: relative;
     z-index: 1;
-    height: 1365px;
+    margin-bottom: -150px;
     
 }
 .showreel-section::before{
     position: absolute;
     z-index: -1;
-    height: 97%;
+    height: 87%;
     content: '';
     width: 100%;
     top: 50px;
@@ -1311,3 +1317,28 @@ Footer  Section
     color: var(--color-blue);
     transform: rotateY(180deg);
 }
+
+
+/* ================================
+Responsive CSS
+================================= */
+
+@media (min-width: 1400px){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+/* ========================
+Learge Display Code
+======================== */
+
+@media (min-width: 1600px){
+    .container {
+        max-width: 1560px;
+    }
+}
+
+
+
