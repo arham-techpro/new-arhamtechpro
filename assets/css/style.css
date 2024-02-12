@@ -572,7 +572,8 @@ Banner Section
 }
 .banner::before{
     position: absolute;
-    background: linear-gradient(0deg, rgba(15,23,42,0.05) 28%, rgba(10,46,174,0) 100%);
+    /* background: linear-gradient(0deg, rgba(15,23,42,0.05) 28%, rgba(10,46,174,0) 100%); */
+    background: linear-gradient(180deg, rgba(15,23,42,0) 44%, rgba(0,46,174,0.05) 64%);
     height: 100%;
     width: 100%;
     content: '';
