@@ -28,9 +28,11 @@ Root Elements
     --btn-bg-1: #A9DAFF;
     --btn-bg-2:#E8E8E8;
     --main-white: #fff;
+    --color-e9-50: rgb(233 233 233 / 50%);
     --bg-c:#E6EAF7;
     --gradiant-a: linear-gradient(128deg, #E5F4FF 0%, #FFF4E9 100%);
     --gradiant-b: linear-gradient(#FEFEFE 50%, #FEFEFE 100%);
+    --gradiant-c: linear-gradient(107deg, #E5F4FF 0%, #FFF4E9 100%);;
     
 }
 
@@ -83,6 +85,9 @@ Reusable Componant
 }
 .height-100vh{
     height: 100vh;
+}
+.w-120p{
+    width: 120%;
 }
 
 .font-72{
@@ -252,6 +257,12 @@ Specings
 .pt-40{
     padding-top: 40px;
 }
+.p-20{
+    padding: 20px;
+}
+.p-40{
+    padding: 40px;
+}
 .py-40{
     padding: 40px 0px;
 }
@@ -330,6 +341,12 @@ Body Default Colors
 }
 .gradiant-bg-b{
     background: var(--gradiant-b);
+}
+.gradiant-bg-c{
+    background: var(--gradiant-c);
+}
+.bg-e9-50{
+    background: var(--color-e9-50);
 }
 .bg-4{
     background: var(--bg-white-4);
@@ -443,7 +460,7 @@ Header Section
     overflow: hidden;
 }
 .service-on-menu{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-top: 38px;
 }
 .service-on-menu.main-navbar.index-2.navbar-expand-lg .navbar-nav .nav-link{
@@ -456,10 +473,10 @@ Header Section
     background: var(--color-a);
 }
 .service-submenu:hover{
-    height: 85vh;
+    height: 650px;
 }
 .service-submenu.open-submenu{
-    height: 85vh;
+    height: 650px;
 }
 
 .service-submenu-container{
@@ -909,7 +926,9 @@ Workprocess Section
 .agency-overview{
     padding: 120px 0px 120px 0px;
 }
-
+.agency-overview .section-title{
+    font-size: 60px;
+}
 
 /* ======================================
 Service Section Loop
@@ -990,6 +1009,11 @@ Service Section Loop
         right: -2980px;
 
     }
+}
+
+
+.index-contact-section h3{
+    letter-spacing: -1.92px;
 }
 
 /* ======================================
@@ -1084,7 +1108,7 @@ Faq  Section
 Index Contact  Section
 ======================================*/
 .index-contact-left{
-    padding: 60px 60px 70px 60px;
+    padding: 60px 50px 70px;
     border-radius: 24px;
 }
 
@@ -1167,7 +1191,7 @@ Single Pages Componant Design
     padding-top: 4px;
 }
 .work-box:hover{
-    background: var(--color-a);
+    background: var(--base-white);
     cursor: pointer;
 }
 .work-box:hover h3 , .work-box.active h3{
@@ -1176,9 +1200,9 @@ Single Pages Componant Design
 .work-box:hover p , .work-box.active p{
     color: var(--base-black-3);
 }
-.work-box:hover .box-title-box , .work-box.active .box-title-box{
+/* .work-box:hover .box-title-box , .work-box.active .box-title-box{
     background: var(--base-white);
-}
+} */
 
 
 /* ======================================
@@ -1241,10 +1265,22 @@ Single Pages Componant Design
 
 
 
+/* ======================================
+Mission
+======================================*/
 
-
-
-
+.misson-paragraph{
+    padding-right: 115px;
+}
+.mission-box{
+    height: 265px;
+}
+.core-box{
+    border: 1px solid #e9e9e9;
+    background: transparent;
+    margin-bottom: 24px;
+    height: 190px;
+}
 
 
 
