@@ -18,13 +18,13 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(workprocess_box, {
     // xPercent: -100 * (workprocess_box.length - 0),
     xPercent: -50 * (workprocess_box.length - 0),
-    duration: 10,
+    duration: 2,
     ease: "sine.in",
     scrollTrigger: {
         trigger: workprocess_section,
         // markers:true,
         pin:true,
-        scrub: .25,
+        scrub: 1,
         snap: 2 / (workprocess_box.length - 0),
         // start:"top 80vh",
         // end:"bottom center",
