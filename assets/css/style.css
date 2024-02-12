@@ -690,13 +690,14 @@ Video Section
 .showreel-section {
     position: relative;
     z-index: 1;
-    margin-bottom: -150px;
+    height: 1420px;
+    /* margin-bottom: -150px; */
     
 }
 .showreel-section::before{
     position: absolute;
     z-index: -1;
-    height: 87%;
+    height: 97%;
     content: '';
     width: 100%;
     top: 50px;
@@ -707,6 +708,7 @@ Video Section
 .video-container {
     margin: auto;
     margin-top: -50px;
+    /* scale: .5; */
 }
 .video-container:hover{
     cursor: url('../img/icons/show-reel-cursor.svg'),auto;

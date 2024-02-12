@@ -16,15 +16,20 @@ let workprocess_box = gsap.utils.toArray('.single-process-box');
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(workprocess_box, {
-    xPercent: -100 * (workprocess_box.length - 0),
-    duration: 3,
+    // xPercent: -100 * (workprocess_box.length - 0),
+    xPercent: -50 * (workprocess_box.length - 0),
+    duration: 10,
     ease: "sine.in",
     scrollTrigger: {
         trigger: workprocess_section,
+        // markers:true,
         pin:true,
-        scrub: 4,
-        snap: 1 / (workprocess_box.length - 0),
-        end: "+=" + workprocess_section.offsetWidth
+        scrub: .25,
+        snap: 2 / (workprocess_box.length - 0),
+        // start:"top 80vh",
+        // end:"bottom center",
+        end: "+=" + workprocess_section.offsetWidth,
+
     }
 });
 
@@ -41,6 +46,7 @@ timeline.from(".banner-main-text",{
     // rotate: "-15deg",
     ease: "power2.in"
 })
+
 .from(".service_header",{ //Service Header
     xPercent: -20,
 })
