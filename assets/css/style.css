@@ -25,6 +25,7 @@ Root Elements
     --base-black-3: #1B1B1B;
     --para-black-3: #656565;
     --para-black-4: #686868;
+    --para-black-5: #4B4B4B;
     --btn-bg-1: #A9DAFF;
     --btn-bg-2:#E8E8E8;
     --main-white: #fff;
@@ -512,10 +513,10 @@ Header Section
     padding: 102px 18px 25px;
 }
 .footer-social-icon.header-social {
-    border-color: #4B4B4B;
+    border-color: var(--para-black-5);
 }
 .footer-social-icon.header-social i{
-    color: #4B4B4B;
+    color: var(--para-black-5);
 }
 .submenu-background-blur{
     content: '';
@@ -1043,7 +1044,7 @@ Blog Section
 .blog-categories span{
     padding: 6px 12px;
     color: var(--para-white-3);
-    background-color: #4b4b4b;
+    background-color: var(--para-black-5);
     font-weight: 500;
     transform: .3s ease;
 }
@@ -1132,8 +1133,8 @@ Index Contact  Section
 }
 
 .testmonials-form .form-item input, .testmonials-form .form-item select, .testmonials-form .form-item textarea {
-    border-bottom: 2px solid #4B4B4B;
-    color: #4B4B4B;
+    border-bottom: 2px solid var(--para-black-5);
+    color: var(--para-black-5);
     opacity: .75;
 }
 .form-item input, .form-item select, .form-item textarea {
@@ -1142,11 +1143,11 @@ Index Contact  Section
     border-top: none;
     border-right: none;
     border-left: none;
-    border-image: initial;
-    border-bottom: 2px solid #4B4B4B;
+    border-image: initiavar(--para-black-5);
+    border-bottom: 2px solid var(--para-black-5);
     padding-bottom: 10px;
     font-size: 20px;
-    color: #4B4B4B;
+    color: var(--para-black-5);
     opacity: .75;
 }
 .form-item label {
@@ -1302,11 +1303,65 @@ Main Work Process
 .main-workprocess-container .single-process-box img{
     filter: brightness(1) invert(1);
 }
+.main-workprocess-container .single-process-box h3{
+    margin-bottom: 15px;
+}
 
+/* ======================================
+Single Blog Details
+======================================*/
+.single-blog-details,
+.single-blog-details p,
+.single-blog-details span,
+.single-blog-details ul , .single-blog-details ol{
+    font-size: 18px;
+    color: var(--para-black-5);
+}
+.single-blog-details h2{
+    font-weight: bold;
+    font-size: 32px;
+    color: #000;
+}
+.single-blog-right-area{
+    position: sticky;
+    top: 0;
 
-
-
-
+}
+.table-of-content-menu {
+    padding-left: 20px;
+    padding-top: 15px;
+    position: relative;
+    margin-left: -12px;
+}
+.table-of-content-menu::before , .table-of-content-menu li a::before{
+    position: absolute;
+    content: '';
+    height: 93%;
+    width: 4px;
+    background: var(--base-black);
+    left: 0;
+    top: 22px;
+}
+.table-of-content-menu li a{
+    font-size: 14px;
+    color: var(--para-black-4);
+    text-transform: capitalize;
+}
+.table-of-content-menu li a::before{
+    height: 22px;
+    top: 0px;
+    left: -20px;
+    background: var(--base-black);
+}
+.table-of-content-menu li a.active-content::before {
+    background: var(--color-a);
+}
+.table-of-content-menu li{
+    margin-bottom: 10px;
+}
+.table-of-content-menu li a:hover,.table-of-content-menu li a.active-content{
+    color: var(--base-black);
+}
 
 
 
@@ -1342,8 +1397,8 @@ Footer  Section
 }
 
 .footer-middle{
-    border-top: 1px solid #4b4b4b;
-    border-bottom: 1px solid #4b4b4b;
+    border-top: 1px solid var(--para-black-5);
+    border-bottom: 1px solid var(--para-black-5);
     padding: 27px 0px;
 }
 .footer-middle ul{
