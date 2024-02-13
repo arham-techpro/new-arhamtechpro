@@ -690,9 +690,7 @@ Video Section
 .showreel-section {
     position: relative;
     z-index: 1;
-    height: 1420px;
-    /* margin-bottom: -150px; */
-    
+    height: 1370px;
 }
 .showreel-section::before{
     position: absolute;
@@ -1323,13 +1321,16 @@ Footer  Section
     padding-left: 0;
 }
 .footer-box ul li:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .footer-middle{
     border-top: 1px solid #4b4b4b;
     border-bottom: 1px solid #4b4b4b;
     padding: 27px 0px;
+}
+.footer-middle ul{
+    margin-bottom: 0;
 }
 .footer-bottom{
     padding: 40px 0px 60px 0px;
@@ -1356,6 +1357,11 @@ Footer  Section
     color: var(--color-blue);
     transform: rotateY(180deg);
 }
+
+
+
+
+
 
 
 /* ================================
