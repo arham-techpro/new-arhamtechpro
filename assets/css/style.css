@@ -1219,6 +1219,10 @@ Single Pages Componant Design
     padding: 40px;
     transition: .3s ease;
 }
+.box-title-box{
+    transition: .3s ease;
+    
+}
 .work-box h3{
     font-size: 32px;
     line-height: normal;
@@ -1235,9 +1239,9 @@ Single Pages Componant Design
 .work-box:hover p , .work-box.active p{
     color: var(--base-black-3);
 }
-/* .work-box:hover .box-title-box , .work-box.active .box-title-box{
+.work-box:hover .box-title-box , .work-box.active .box-title-box{
     background: var(--base-white);
-} */
+}
 
 
 /* ======================================
