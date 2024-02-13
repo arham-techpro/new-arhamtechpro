@@ -69,6 +69,7 @@ body{
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     background: var(--gradiant-a);
+    scroll-behavior: smooth;
 }
 ul,ol{
     list-style: none;

@@ -10,11 +10,23 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 
-const workprocess_section = document.querySelector('.workprocess-section');
-let workprocess_box = gsap.utils.toArray('.single-process-box');
-
 gsap.registerPlugin(ScrollTrigger);
 
+
+var links = $('#serviceMenu');
+  
+links.on( 'click', function(e) {
+    
+    e.preventDefault();
+    var targetSection = $(this).attr('href');
+    var targetOffset = $(targetSection).offset().top + 20;
+    TweenMax.to(window, 3, { scrollTo:{y:targetOffset }, ease: Power3.easeOut });
+
+});
+
+
+const workprocess_section = document.querySelector('.workprocess-section');
+let workprocess_box = gsap.utils.toArray('.single-process-box');
 gsap.to(workprocess_box, {
     // xPercent: -100 * (workprocess_box.length - 0),
     xPercent: -80 * (workprocess_box.length - 0),

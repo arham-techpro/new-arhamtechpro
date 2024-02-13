@@ -35,6 +35,14 @@ window.onload = function () {
         faviconIndex++;
         faviconIndex %= 2;
     }, 1000);
+
+
+    // Target Service
+    frontPageUrl = window.location.href;
+    if(frontPageUrl.split('#').length > 1){
+        $('#serviceMenu').trigger("click");
+    }
+
 };
 
 $('.service-sub-menu').on("mouseover", function () {
