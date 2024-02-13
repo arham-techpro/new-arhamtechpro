@@ -30,6 +30,8 @@ Root Elements
     --main-white: #fff;
     --color-e9-50: rgb(233 233 233 / 50%);
     --bg-c:#E6EAF7;
+    --bg-d:#fafafa;
+    --bg-e:#f5f5f5;
     --gradiant-a: linear-gradient(128deg, #E5F4FF 0%, #FFF4E9 100%);
     --gradiant-b: linear-gradient(#FEFEFE 50%, #FEFEFE 100%);
     --gradiant-c: linear-gradient(107deg, #E5F4FF 0%, #FFF4E9 100%);;
@@ -318,6 +320,12 @@ Body Default Colors
 .bg-c{
     background: var(--bg-c);
 }
+.bg-d{
+    background: var(--bg-d);
+}
+.bg-e{
+    background: var(--bg-e);
+}
 .bg-blue,.hover-bg-blue:hover{
     background: var(--color-blue);
 }
@@ -481,7 +489,7 @@ Header Section
 
 .service-submenu-container{
     z-index: 11;
-    background: #fafafa;
+    background: var(--bg-d);;
     padding: 32px;
 }
 .service-sub-menu:hover .service-submenu {
@@ -1283,8 +1291,17 @@ Mission
     height: 190px;
 }
 
-
-
+/* ======================================
+Main Work Process
+======================================*/
+.main-workprocess-container .single-process-box{
+    height: 460px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.main-workprocess-container .single-process-box img{
+    filter: brightness(1) invert(1);
+}
 
 
 
