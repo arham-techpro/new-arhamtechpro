@@ -736,28 +736,50 @@ Video Section
 /* ======================================
 Service Section 
 ======================================*/
+#services{
+    z-index: 1;
+}
+#services::before{
+    content: '';
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 59.39%, rgba(255, 255, 255, 0.17) 99.49%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    clip-path: ellipse(50% 46% at 50% 50%);
+    z-index: -1;
+}
 .filter-inverse{
     filter: invert(1);
+}
+.op-75{
+    opacity: .75;
 }
 .single-service{
     height: 77px;
     margin-bottom: 20px;
-    /* padding: 0px 65px; */
     opacity: .65;
 }
 
-.single-service:hover{
-    opacity: 1;
-}
+
 .single-service .new-animated-button.theme-button{
     padding: 10px 32px;
+}
+.single-service .service-number,
+.single-service .new-animated-button.theme-button{
+    opacity: .75;
 }
 .single-service:hover .new-animated-button {
     background: var(--color-a);
 }
-
-.single-service:hover .single-service-link .service-number, .single-service.active .single-service-link .service-number{
-    color: var(--base-white);
+.single-service:hover,
+.single-service:hover .service-number,
+.single-service:hover .new-animated-button.theme-button{
+    opacity: 1;
+}
+.single-service:hover .single-service-link .service-number, .single-service.active .single-service-link .service-number,
+.single-service:hover .single-service-link span{
+    color: var(--color-a);
 }
 .single-service:hover .new-animated-button .button-left-arrow {
     opacity: 0;
