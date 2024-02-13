@@ -33,9 +33,10 @@ Root Elements
     --bg-c:#E6EAF7;
     --bg-d:#fafafa;
     --bg-e:#f5f5f5;
-    --gradiant-a: linear-gradient(128deg, #E5F4FF 0%, #FFF4E9 100%);
+    --gradiant-a: linear-gradient(90deg, #E5F4FF 0%, #FFF4E9 100%);
     --gradiant-b: linear-gradient(#FEFEFE 50%, #FEFEFE 100%);
-    --gradiant-c: linear-gradient(107deg, #E5F4FF 0%, #FFF4E9 100%);;
+    --gradiant-c: linear-gradient(107deg, #E5F4FF 0%, #FFF4E9 100%);
+    
     
 }
 
@@ -67,6 +68,7 @@ Body Default CSS
 body{
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    background: var(--gradiant-a);
 }
 ul,ol{
     list-style: none;
