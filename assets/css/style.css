@@ -741,12 +741,13 @@ Service Section
 }
 #services::before{
     content: '';
-    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 59.39%, rgba(255, 255, 255, 0.17) 99.49%);
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 75.39%, rgba(255, 255, 255, 0.17) 98.49%);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 20px;
-    clip-path: ellipse(50% 46% at 50% 50%);
+    clip-path: ellipse(53% 40% at 50% 44%);
+    z-index: -1;
     z-index: -1;
 }
 .filter-inverse{
