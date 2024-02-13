@@ -34,7 +34,7 @@ window.onload = function () {
         favicon.href = 'assets/img/fav' + faviconIndex + ".png";
         faviconIndex++;
         faviconIndex %= 2;
-    }, 1000);
+    }, 1500);
 
 
     // Target Service
