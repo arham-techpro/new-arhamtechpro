@@ -275,6 +275,9 @@ Specings
 .py-40{
     padding: 40px 0px;
 }
+.p-40-60{
+    padding:40px 60px
+}
 .p-60-68{
     padding:60px 68px
 }
@@ -1403,7 +1406,7 @@ Career Page
 .single-job-table{
     padding: 24px 40px;
 }
-.single-job-table:not(:last-child){
+.single-job-table:not(:last-child),.details-list-2 li:not(:last-child){
     margin-bottom: 20px;
 }
 .details-list li:not(:last-child){
