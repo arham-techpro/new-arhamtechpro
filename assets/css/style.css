@@ -92,6 +92,9 @@ Reusable Componant
 .height-100vh{
     height: 100vh;
 }
+.h-100p{
+    height: 100%;
+}
 .w-120p{
     width: 120%;
 }
@@ -271,6 +274,9 @@ Specings
 }
 .py-40{
     padding: 40px 0px;
+}
+.p-60-68{
+    padding:60px 68px
 }
 .ul-list{
     list-style: disc;
@@ -1399,6 +1405,13 @@ Career Page
 }
 .single-job-table:not(:last-child){
     margin-bottom: 20px;
+}
+.details-list li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.detail-box:not(:last-child){
+    margin-bottom: 60px;
 }
 .mini-badge{
     border-radius: 6px;
