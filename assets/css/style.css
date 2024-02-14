@@ -1613,3 +1613,88 @@ Small Display and Tablet display
     }
     
 }
+
+
+/* ==================================
+Small Display and Tablet display
+=================================== */
+@media (max-width: 1200px){
+
+    .container{
+        max-width: 990px;
+    }
+    .header-button-services{
+        width: 26%;
+    }
+    .navbar-brand{
+        width: 20%;
+    }
+    .navbar-width{
+        width: 54%;
+    }
+    .fs-5 {
+        font-size: 1rem!important;
+    }
+    .service-sub-menu {
+        padding-right: 0px;
+    }
+    .logo {
+        width: 190px;
+    }
+    .service-sub-menu span{
+        margin-right: 10px !important;
+    }
+    .footer-middle img{
+        width: 150px;
+    }
+    .submenu-socails .gap-3{
+        gap: 8px !important;
+    }
+    .single-overview{
+        text-align: center !important;
+    }
+    .single-overview.text-center:not(:last-child) {
+        padding-right: 28px;
+    }
+    .showreel-section {
+        height: 850px;
+    }
+    .slick-prev {
+        left: 65%;
+    }
+    .slick-next {
+        right: 10px;
+    }
+    .portfolio-categories{
+        gap: 5px;
+    }
+    .right-absolute-section-image{
+        width: 450px;
+    }
+    .index-contact-left{
+        margin-right: 15px !important;
+    }
+    /* Font Sizing */
+    .section-title, .font-56{
+        font-size: 48px;
+    }
+    .font-48 {
+        font-size: 42px;
+    }
+    .footer-bottom a.fs-3{
+        font-size: 18px !important;
+    }
+   
+
+    .single-page-banner-image {
+        top: 255px !important;
+        width: 460px;
+    }
+    .fst-benifits-box{
+        margin-right: 70px !important;
+    }
+    .blog-categories{
+        font-size: 14px;
+    }
+
+}
