@@ -1391,11 +1391,33 @@ Single Blog Details
 }
 
 
-
-
-
-
-
+/* ======================================
+Career Page
+======================================*/
+.single-job-table{
+    padding: 24px 40px;
+}
+.single-job-table:not(:last-child){
+    margin-bottom: 20px;
+}
+.mini-badge{
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.button-border-a{
+    border: 1px solid var(--color-a);
+}
+.button-border-a:hover{
+    background: transparent;
+    color: var(--color-a);
+}
+.color-warning{
+    color: #AF720E;
+}
+.warning-soft-bg{
+    background: #FCE2B6;
+}
 
 
 
