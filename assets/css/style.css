@@ -16,6 +16,7 @@ Root Elements
 :root{
     --color-blue: #002EAE;
     --color-a: #F6A114;
+    --color-warning-2: #FBD493;
     --base-white: #F0F0F0;
     --para-white-2: #DADADA;
     --para-white-3: #aaa;
@@ -323,7 +324,9 @@ Body Default Colors
 .hover-main-white:hover{
     color: var(--main-white);
 }
-
+.color-warning-2{
+    color: var(--color-warning-2);
+}
 .bg-a , .hover-bg-a:hover{
     background: var(--color-a);
 }
@@ -356,6 +359,9 @@ Body Default Colors
 }
 .bg-para-3{
     background:var(--para-black-3);
+}
+.bg-para-5{
+    background:var(--para-black-5);
 }
 .gradiant-bg-a{
     background: var(--gradiant-a);
@@ -974,6 +980,55 @@ Workprocess Section
 .agency-overview{
     padding: 120px 0px 120px 0px;
 }
+
+/* ======================================
+Main Contact Page
+======================================*/
+.main-contact-page{
+    padding-top: 170px;
+}
+.main-contact-page .index-contact-left {
+    padding: 60px 45px 70px;
+}
+.custom-hr{
+    margin: 80px 0px;
+    color: #B9B9B9;
+}
+/* .single-location-container{
+    gap: 100px;
+} */
+.time-zone-box{
+    padding: 16px 40px ;
+    height: 100%;
+    background: #E9E9E9;
+    border-radius: 16px;
+}
+.time-zone-box .timezone span{
+    color: var(--base-black);
+}
+.time-zone-box .opens-hours {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #B0BEE6;
+}
+.time-zone-box .opens-hours p{
+    color: #000;
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+.time-zone-box .opens-hours span{
+    color: var(--color-blue);
+}
+.time-zone-box.night{
+    background: var(--base-black);
+}
+.time-zone-box.night .timezone span , .time-zone-box.night .opens-hours p{
+    color: var(--base-white);
+}
+.time-zone-box.night .opens-hours span{
+    color: var(--color-a);
+}
+
 
 /* ======================================
 Service Section Loop
