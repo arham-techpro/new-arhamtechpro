@@ -1524,3 +1524,33 @@ Learge Display Code
 
 
 
+/* ==================================
+Small Display and Tablet display
+=================================== */
+@media screen and (max-width:1380px) {
+    .font-62{
+        font-size: 52px;
+        line-height: 120%;
+    }
+    .banner-bottom-area {
+        padding-top: 68px;
+    }
+    .banner::before {
+        clip-path: ellipse(64% 62% at 50% 8%);
+    }
+    .showreel-section {
+        height: 1220px;
+    }
+    .workprocess-section{
+        padding: 50px 0px;
+    }
+    .horaizontal-scroll-section.mt-60 {
+        margin-top: 40px;
+    }
+    .single-process-box{
+        padding: 40px;
+    }
+    .single-process-box ul{
+        margin-bottom: 0px !important;
+    }
+}
