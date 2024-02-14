@@ -968,6 +968,9 @@ Workprocess Section
     display: inline-flex;
     gap: 32px;
 }
+.single-process-box ul{
+    margin-bottom: 0px !important;
+}
 .agency-overview{
     padding: 120px 0px 120px 0px;
 }
@@ -1550,7 +1553,5 @@ Small Display and Tablet display
     .single-process-box{
         padding: 40px;
     }
-    .single-process-box ul{
-        margin-bottom: 0px !important;
-    }
+    
 }
