@@ -41,7 +41,6 @@ Root Elements
     --gradiant-b: linear-gradient(#FEFEFE 50%, #FEFEFE 100%);
     --gradiant-c: linear-gradient(107deg, #E5F4FF 0%, #FFF4E9 100%);
     
-    
 }
 
 /* width */
@@ -83,7 +82,10 @@ a{
     text-decoration: none;
 }
 
-
+.row>* {
+    padding-right: calc(var(--bs-gutter-x) * .3);
+    padding-left: calc(var(--bs-gutter-x) * .3);
+}
 
 
 
@@ -236,6 +238,12 @@ Specings
 ====================================*/
 .section-padding{
     padding: 120px 0px;
+}
+.section-pb{
+    padding-bottom: 120px;
+}
+.section-pt{
+    padding-top: 120px;
 }
 .section-padding-sm{
     padding: 80px 0px;
