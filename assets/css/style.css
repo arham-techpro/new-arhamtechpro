@@ -34,6 +34,7 @@ Root Elements
     --bg-c:#E6EAF7;
     --bg-d:#fafafa;
     --bg-e:#f5f5f5;
+    /* --gradiant-a: linear-gradient(90deg, #E5F4FF 0%, #FFF4E9 100%); */
     --gradiant-a: linear-gradient(90deg, #E5F4FF 0%, #FFF4E9 100%);
     --gradiant-b: linear-gradient(#FEFEFE 50%, #FEFEFE 100%);
     --gradiant-c: linear-gradient(107deg, #E5F4FF 0%, #FFF4E9 100%);
@@ -106,7 +107,7 @@ Reusable Componant
 }
 .font-62{
     font-size: 62px;
-    line-height: 125%;
+    line-height: 120%;
 }
 .font-56{
     font-size: 56px;
@@ -224,6 +225,9 @@ Reusable Componant
 .op-80{
     opacity: .8;
 }
+.op-85{
+    opacity: .85;
+}
 
 /* ====================================
 Specings
@@ -289,7 +293,7 @@ Specings
     list-style: disc;
 }
 .banner-bottom-area{
-    padding-top: 120px;
+    padding-top: 155px;
 }
 
 
@@ -597,17 +601,20 @@ Banner Section
 ====================================== */
 .banner{
     height: 100vh;
-    background: linear-gradient(107deg, #E5F4FF 0%, #FFF4E9 100%);
+    background: #F9F4EE;
     position: relative;
 }
 .banner::before{
     position: absolute;
     /* background: linear-gradient(0deg, rgba(15,23,42,0.05) 28%, rgba(10,46,174,0) 100%); */
-    background: linear-gradient(180deg, rgba(15,23,42,0) 44%, rgba(0,46,174,0.05) 64%);
+    background: linear-gradient(180deg, rgba(15,23,42,0) 44%, rgba(0,46,174,0.07) 64%);
     height: 100%;
     width: 100%;
     content: '';
     clip-path: ellipse(58% 69% at 50% 1%);
+}
+.banner-main-text{
+    opacity: .9;
 }
 .button-not-rotate:hover .button-right-arrow {
     rotate: 0deg;
@@ -616,14 +623,14 @@ Banner Section
     display: inline-flex;
     align-items: center;
     height: 80px;
-    width: 100px;
+    width: 80px;
     position: relative;
 }
 #globe_animation{
     display: inline-flex;
     align-items: center;
     height: 80px;
-    width: 100px ;
+    width: 80px ;
     position: absolute;
     bottom: -15px;
 }
@@ -666,7 +673,7 @@ Banner Section
 .banner-scroll-down {
     position: relative;
     border-radius: 100px;
-    background: #DFE1E7;
+    background: rgba(0,46,174,0.08);
     height: 116px;
     width: 116px;
     padding: 10px;
@@ -877,6 +884,10 @@ Portfolio Section
     scale: 1;
 }
 
+/* .single-portfolio:hover .portfolio-section-hover-icon{
+    scale: 1;
+} */
+
 .portfolio-categories{
     display: flex;
     gap: 16px;
@@ -889,6 +900,29 @@ Portfolio Section
     padding: 35px;
     border-radius: 100px;
 }
+.portfolio-image{
+    position: relative;
+}
+.portfolio-image::before{
+    content: '';
+    background: rgb(0 0 0 / 30%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    scale: 0;
+    transform-origin: center;
+    transition: .5s ease;
+    cursor: url('../img/icons/arrow-small-orange-bg.svg'),auto;
+    border-radius: 25px;
+}
+
+.single-portfolio:hover .portfolio-image::before{
+    scale: 1;
+}
+
+
+
 
 /* ======================================
 WHy Chose us
