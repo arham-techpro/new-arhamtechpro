@@ -517,7 +517,6 @@ Header Section
 
 .service-submenu-container{
     z-index: 11;
-    background: var(--bg-d);;
     padding: 32px;
 }
 .service-sub-menu:hover .service-submenu {
