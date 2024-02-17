@@ -539,6 +539,7 @@ Header Section
     margin-bottom: 25px;
     padding-top: 38px;
 }
+
 .service-on-menu.main-navbar.index-2.navbar-expand-lg .navbar-nav .nav-link{
     color: var(--base-white);
 }
@@ -562,6 +563,9 @@ Header Section
 .service-sub-menu:hover .service-submenu {
     opacity: 1;
     visibility: visible;
+}
+.submenu-socails .footer-social-icon-container{
+    margin-bottom: 14px;
 }
 .service-menus{
     padding: 40px;
@@ -832,8 +836,7 @@ Service Section
 .single-service .new-animated-button.theme-button{
     padding: 10px 32px;
 }
-.single-service .service-number,
-.single-service .new-animated-button.theme-button{
+.single-service .service-number{
     opacity: .85;
 }
 .single-service:hover .new-animated-button {
