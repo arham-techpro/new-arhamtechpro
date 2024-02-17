@@ -388,7 +388,7 @@ Body Default Colors
     background: var(--bg-white-4);
 }
 .btn-bg-black-hover:hover{
-    background: var(--btn-bg-2);
+    background: var(--base-white);
 }
 
 
