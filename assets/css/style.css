@@ -9,7 +9,9 @@ Fonts
 .para-font,p,span,ul,ol,a{
     font-family: 'Inter', sans-serif;
 }
-
+ul,ol{
+    margin-bottom: 0;
+}
 /* ====================================
 Root Elements 
 ====================================*/
@@ -36,6 +38,7 @@ Root Elements
     --bg-c:#E6EAF7;
     --bg-d:#fafafa;
     --bg-e:#f5f5f5;
+    --bg-f:#FEFEFE;
     /* --gradiant-a: linear-gradient(90deg, #E5F4FF 0%, #FFF4E9 100%); */
     --gradiant-a: linear-gradient(90deg, #E5F4FF 0%, #FFF4E9 100%);
     --gradiant-b: linear-gradient(#FEFEFE 50%, #FEFEFE 100%);
@@ -104,6 +107,12 @@ Reusable Componant
 .w-120p{
     width: 120%;
 }
+.w-10p{
+    width: 10%;
+}
+.w-90p{
+    width: 90%;
+}
 
 .font-72{
     font-size: 72px;
@@ -125,6 +134,9 @@ Reusable Componant
 }
 .font-20{
     font-size: 20px;
+}
+.font-14{
+    font-size: 14px;
 }
 .border-color-base-white{
     border-color: var(--base-white);
@@ -269,14 +281,26 @@ Specings
 .mb-40{
     margin-bottom: 40px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
 .mb-100{
     margin-bottom: 100px;
+}
+.py-80{
+    padding: 80px 0px;
+}
+.pb-100{
+    padding-bottom: 100px;
 }
 .pt-80{
     padding-top: 80px;
 }
 .pb-80{
     padding-bottom: 80px;
+}
+.pb-60{
+    padding-bottom: 60px;
 }
 .pt-40{
     padding-top: 40px;
@@ -359,6 +383,9 @@ Body Default Colors
 .bg-e{
     background: var(--bg-e);
 }
+.bg-f {
+    background: var(--bg-f);
+}
 .bg-blue,.hover-bg-blue:hover{
     background: var(--color-blue);
 }
@@ -397,6 +424,11 @@ Body Default Colors
 }
 .btn-bg-black-hover:hover{
     background: var(--base-white);
+}
+
+
+.rounded-8{
+    border-radius: 8px;
 }
 
 
@@ -776,7 +808,7 @@ Service Section
 }
 #services::before{
     content: '';
-    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 71.39%, rgba(255, 255, 255, 0.17) 98.49%);
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 62.39%, rgb(255 255 255 / 22%) 107.49%);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -793,7 +825,7 @@ Service Section
 .single-service{
     height: 77px;
     margin-bottom: 20px;
-    opacity: .65;
+    opacity: .75;
 }
 
 
@@ -802,7 +834,7 @@ Service Section
 }
 .single-service .service-number,
 .single-service .new-animated-button.theme-button{
-    opacity: .75;
+    opacity: .85;
 }
 .single-service:hover .new-animated-button {
     background: var(--color-a);
@@ -1198,7 +1230,7 @@ Faq  Section
 ======================================*/
 
 .faq-items .accordion-button {
-    background: #FEFEFE;
+    background: var(--bg-f);
     color: var(--base-black);
     border: none;
 }
@@ -1214,7 +1246,7 @@ Faq  Section
 }
 
 .faq-items .accordion-button {
-    background: #FEFEFE;
+    background: var(--bg-f);
     color: var(--base-black);
     border: none;
 }
@@ -1538,6 +1570,63 @@ Career Page
 .warning-soft-bg{
     background: #FCE2B6;
 }
+
+
+/* ======================================
+Main Single Service Pagess
+======================================*/
+.expectation-image{
+    border-radius:12px 0px 0px 12px;
+}
+.design-solution-section .service-box{
+    margin-bottom: 40px;
+}
+.servicer-work-section{
+    padding-top: 260px;
+}
+
+.image-hover:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 8px 10px -6px #2a2a2a94;
+}
+.has-list-padding-20 li:not(:last-child){
+    margin-bottom: 20px;
+}
+.has-list-padding-24 li:not(:last-child){
+    margin-bottom: 24px;
+}
+.process-box{
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
