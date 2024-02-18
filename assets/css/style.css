@@ -21,6 +21,7 @@ Root Elements
     --color-warning-2: #FBD493;
     /* --base-white: #F0F0F0; */
     --base-white: #F9F4EE;
+    --base-white-2: #F0F0F0;
     --para-white-2: #DADADA;
     /* --para-white-3: #aaa; */
     --para-white-3: #c4c4c4;
@@ -373,6 +374,9 @@ Body Default Colors
 }
 .bg-base-white{
     background: var(--base-white);
+}
+.bg-base-white-2{
+    background: var(--base-white-2);
 }
 .bg-c{
     background: var(--bg-c);
