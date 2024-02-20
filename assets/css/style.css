@@ -1606,6 +1606,9 @@ Main Single Service Pagess
     margin-bottom: 60px;
 }
 
+.responsive-d-flex{
+    display: none;
+}
 
 
 
@@ -1839,7 +1842,7 @@ Small Display and Tablet display
 
 }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
     .container {
         max-width: 720px !important;
     }
@@ -1849,6 +1852,10 @@ Small Display and Tablet display
     .navbar-brand{
         width: 27%;
         justify-content: center !important;
+    }
+
+    .banner::before {
+        clip-path: ellipse(83% 53% at 50% 8%);
     }
 
     /* FOnt Sizes */
@@ -1865,6 +1872,9 @@ Small Display and Tablet display
         width: 65px;
         bottom: -11px;
     }
+    .fs-2{
+        font-size: 24px !important;
+    }
     .portfolio-categories , .footer-middle ul{
         flex-wrap: wrap;
     }
@@ -1876,7 +1886,83 @@ Small Display and Tablet display
     .monosary-portfolio-container{
         column-count: 1;
     }
-    /* .portfolio-image img{
-        width: ;
-    } */
+    .responsive-d-none{
+        display: none !important;
+    }
+    .responsive-d-flex{
+        display: flex;
+    }
+    .w-120p{
+        width: 100%;
+    }
+    .fs-4{
+        font-size: 18px !important;
+    }
+    .cluth-review-area, .round-indecation{
+        width: 30%;
+    }
+    .banner-button {
+        width: 40%;
+    }
+    .overview-detail {
+        flex-wrap: wrap;
+        transform: translateY(-75px);
+        gap: 50px;
+    }
+    .single-overview:nth-child(3){
+        border-right: none !important;
+    }
+    .single-overview.text-center:not(:last-child) {
+        padding-right: 50px;
+    }
+    #services::before {
+        clip-path: ellipse(90% 42% at 50% 47%);
+    }
+
+    .new-animated-button{
+        display: inline-block;
+    }
+    /* ======
+    Responsive Justyfi-center
+    ======= */
+
+    .overview-detail {
+        justify-content: center !important;
+    }
+
+
+    /* Paddings */
+    .section-padding {
+        padding: 80px 0px;
+    }
+    .pt-120{
+        padding-top: 80px;
+    }
+    .pb-120{
+        padding-bottom: 80px;
+    }
+    .mt-80{
+        margin-top: 40px;
+    }
+    .mb-100{
+        margin-bottom: 40px;
+    }
+    .why-choose-us-box-container{
+        margin-top: 40px;
+    }
+    .footer-box{
+        padding-top: 40px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .container{
+        max-width: 100% !important;
+        padding: 0px 40px ;
+    }
+    .responsive-d-none{
+        display: none !important;
+    }
+    
 }
